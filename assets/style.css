@@ -118,6 +118,15 @@ body {
     padding-block: 2em;
 }
 
+.tags-bar .active-tag {
+    background-color: #BEB45A ;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black ;
+    font-weight: bold;
+}
+
+
 .gallery .nav {
     justify-content: center;
 }
