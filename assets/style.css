@@ -127,15 +127,18 @@ body {
 }
 
 
+
 .gallery .nav {
     justify-content: center;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-    color: #fff;
-    background-color: var(--primary-color);
-    border-radius: 0;
+    background-color: #BEB45A;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    font-weight: bold;
 }
 
 .nav-pills .nav-link {
