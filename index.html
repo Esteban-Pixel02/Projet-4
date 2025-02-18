@@ -20,7 +20,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Nina Carducci - Photographe">
     <meta name="twitter:description" content="Photographe spécialisée en portraits, mariages et événements professionnels.">
-    <meta name="twitter:image" content="https://esteban-pixel02.github.io/Projet-4/assets/images/twitter-image.jpg">
+    <meta name="twitter:image" content="https://esteban-pixel02.github.io/Projet-4/assets/images/nina.webp">
     <meta name="twitter:url" content="https://esteban-pixel02.github.io/Projet-4/">
     <meta name="twitter:creator" content="@NinaCarducci">
    
@@ -45,7 +45,8 @@
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
-          "@type": "Photograph",
+          "@type": "LocalBusiness",
+          "@id": "https://www.votresite.com#nina-carducci",
           "name": "Nina Carducci",
           "url": "https://www.votresite.com",
           "image": "https://www.votresite.com/assets/images/nina.png",
@@ -53,9 +54,26 @@
           "sameAs": [
             "https://www.instagram.com/ninacarducci.photo",
             "https://www.facebook.com/ninacarducci.photo"
-          ]
+          ],
+          "jobTitle": "Photographe",
+          "email": "contact@votresite.com",
+          "priceRange": "€€",
+          "telephone": "05 56 67 78 89",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "68 avenue Alsace-Lorraine",
+            "addressLocality": "Bordeaux",
+            "postalCode": "33200",
+            "addressCountry": "FR"
+          },
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Nina Carducci Photography",
+            "openingHours": "Mo-Fr 10:00-19:00"
+          }
         }
         </script>
+        
 </head>
 
 <body>
@@ -179,15 +197,18 @@
 		<div class="form-container">
 			<h2>Une question ? Une demande de devis ?</h2>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-			<form action="#" method="post">
-				<label>Nom</label>
-				<input type="text" name="nom" id="nom">
-				<label>Email</label>
-				<input type="email" name="email" id="email">
-				<label>Message</label>
-				<textarea name="message" id="message" cols="30" rows="10"></textarea>
-				<input type="submit" value="Envoyer">
-			</form>
+			<form>
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            
+                <input type="submit" value="Envoyer">
+            </form>
 		</div>
 		<div class="picture right">
 			<img src="./assets/images/camera.webp" alt="Caméra Photo" loading="lazy">

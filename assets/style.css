@@ -73,6 +73,40 @@ body {
     margin: auto;
 }
 
+/* Style des boutons de navigation */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(255, 255, 255, 0.5); /* Fond légèrement transparent */
+    border-radius: 50%; /* Forme arrondie */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000; /* Flèches noires par défaut */
+    width: 20px;
+    height: 20px;
+}
+
+/* Modifications au survol */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Fond plus sombre */
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: #BEB45A; /* Changer la couleur des flèches en survol (ici, or) */
+}
+
+
+
+
 .picture {
     flex: 1;
     margin: 0 20px;
@@ -180,6 +214,7 @@ body {
     font-size: 24px;
 }
 
+
 .quote {
     font-family: 'Spectral', serif;
     font-style: italic;
@@ -276,18 +311,21 @@ form input {
 
 form textarea {
     width: 100%;
-    background-color: transparent;
-    border: solid 1px black;
-    height: 5em;
-    line-height: 2.5em;
-    font-size: 1.2em;
+    border: solid 1px #333; /* Bordure plus foncée */
+    color: #000; /* Texte noir */
+    height: 2.5em;
     margin-bottom: 20px;
+    padding: 0.5em;
 }
 
 input[type="submit"] {
-    background-color: green;
+    background-color: #1C6474 ;
+    color: white;
+    border: none;
     padding: 0.5em 1em;
+    cursor: pointer;
 }
+
 
 /* Media Queries */
 
